@@ -2,9 +2,10 @@
 #                https://rubydoc.brew.sh/Formula
 ### https://medium.com/ballerina-techblog/how-to-create-your-own-homebrew-package-or-formula-8dfbf8e001d3
 
+require_relative "./curl_ipv4_download_strategy"
 class Jumphost < Formula
   desc "Jumphost tool for Flipkart"
-  url "https://storage.googleapis.com/brew-jumphost/jumphost-install-v1.3.tar.gz"
+  url "https://storage.googleapis.com/brew-jumphost/jumphost-install-v1.3.tar.gz", :using => CurlIPv4DownloadStrategy
   version "1.3"
   sha256 "e378e0046ba3fe8cbedc849e788be02afc9d44d16769da28a7d0ed1917f0db3c"
   
