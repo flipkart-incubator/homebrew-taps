@@ -5,9 +5,9 @@
 require_relative "./curl_ipv4_download_strategy"
 class Jumphost < Formula
   desc "Jumphost tool for Flipkart"
-  url "https://storage.googleapis.com/brew-jumphost/jumphost-install-v2.2.tar.gz", :using => CurlIPv4DownloadStrategy
-  version "2.2"
-  sha256 "d630f27d4dab4e158fe9f3a4f35725832b62a181038a29733f4682beb4d56680"
+  url "https://storage.googleapis.com/brew-jumphost/jumphost-install-v2.3.tar.gz", :using => CurlIPv4DownloadStrategy
+  version "2.3"
+  sha256 "4d8a23da856e4df4de9327ff9bd731e6f4f31992c132e2af532e04e74e24723a"
 
   def install
     bin.install "fkst-cli", "setup-jumphost-cli.sh"
@@ -18,3 +18,4 @@ class Jumphost < Formula
     "\n\tJumphost has been installed. please run setup-jumphost-cli.sh command to install jumphost related configs\n\n"
   end
 end
+
